@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>LAST HomeWork</title>
+	<link rel="stylesheet" href="css/reset.css"> 
+	<link rel="stylesheet" href="css/style.css">
+	<script data-main="js/main" src="js/require.js"></script>
+</head>
+<body>
+<script type="text/template" id="wrapper-template">
+	<div class="wrapper">
+		<div class="controls">
+			<input type="text" class="subject__value" placeholder="Введите задачи на день...">
+			<button class="subject__add">Add</button>
+		</div>
+		<ul class="subject__list"></ul>
+	</div>
+</script>  
+<script type="text/template" id="list-template">
+	<% for(var i = 0; i < data.length; i++){ %>
+		<li class="subject">
+		<span class="subject__txt subject__txt--visible"><%= data[i] %></span>
+		<input class="subject__input subject__input--invisible" type="text" value="<%= data[i] %>">
+		<div data-value="<%= data[i] %>" class="subject__delete">X</div>
+		</li>
+	<% }; %>
+</script>  
+</body>
+</html>

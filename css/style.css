@@ -1,0 +1,88 @@
+﻿body {
+	font-family: Arial;
+	font-size: 14px;
+	background: url('../img/fon.png') no-repeat  #eee;
+}
+
+.wrapper {
+	max-width: 450px;
+	color: black;
+	background: #e2e2e2;
+	padding: 5px;
+	margin-top: 200px;
+	margin-left: 400px;
+ }
+
+
+.subject {
+	margin-top: 20px;
+	margin-left: 10px;
+	position: relative;  
+	width: 350px;
+	border: none;  
+	margin-bottom: 20px;
+}
+
+.subject__txt--invisible {
+	display: none;
+}
+
+.subject:hover {
+	color: blue;
+	text-decoration: underline;
+ }
+
+.subject__delete {  
+	position: absolute;
+	top: 3px;
+	right: -23px;
+	padding: 0 8px;
+	cursor: pointer;
+	visibility: visible;
+}
+
+.subject:hover .subject__delete {
+	visibility: visible; 
+}
+
+.subject__delete:hover {
+	font-weight: bold;
+}
+
+.subject__input--invisible {  
+	display: none;  
+}
+
+.subject__input--visible {
+	display: block;
+	border: 2px solid #003670;
+	outline: none;
+	width: 300px;
+	height: 20px;
+}
+
+
+
+.subject__value { 
+	display: inline-block; 
+	margin: 5px;  
+	padding: 5px 2px;
+	outline: none;
+	border: 2px solid #003670;
+	width: 300px;;
+}
+
+
+.subject__add {
+	display: inline-block; 
+	line-height: 25px;
+	width: 100px;
+	background: linear-gradient(to top, #81b8f3, #6299d4);
+	border: 2px solid #003670;
+	border-radius: 8px;
+	cursor: pointer;
+ }
+
+.subject__add:hover{
+	background: #c0dbf8;
+}
